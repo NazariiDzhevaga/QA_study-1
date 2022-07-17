@@ -79,4 +79,21 @@ public class TextBoxTests {
         $("#output").shouldHave(text(name), text("aa@aa.com"));
        
     }
+
+
+    @Test
+    void successfulFillTestWithSearchInOutput2() {
+
+        String name = "alex";
+        open("https://demoqa.com/text-box");
+        $("#userName").setValue(name);
+        $("#userEmail").setValue("aa@aa.com");
+        $("#currentAddress").setValue("1234");
+        $("#permanentAddress").setValue("5678").scrollTo();
+        $("#submit").click();
+
+
+        $("#output").shouldHave(text(name), text("aa@aa.com"));
+
+    }
 }
