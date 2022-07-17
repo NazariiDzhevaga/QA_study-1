@@ -67,7 +67,7 @@ public class TextBoxTests {
     @Test
     void successfulFillTestWithSearchInOutput() {
 
-        String name = "alex";
+        String name = "alex1";
         open("https://demoqa.com/text-box");
         $("#userName").setValue(name);
         $("#userEmail").setValue("aa@aa.com");
